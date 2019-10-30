@@ -13,7 +13,7 @@ library(rbokeh)
 library(flexdashboard)
 ```
 
-Row
+row
 -----------------------------------------------------------------------
 
 ### Species
