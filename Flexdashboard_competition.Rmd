@@ -13,7 +13,7 @@ library(rbokeh)
 library(flexdashboard)
 ```
 
-Column {data-width=600}
+Row
 -----------------------------------------------------------------------
 
 ### Species
@@ -27,7 +27,7 @@ figure(width = NULL, height = NULL) %>%
 ```
 
 
-Column {data-width=400}
+row {.tabset .tabset-fade}
 -----------------------------------------------------------------------
 
 ### Species (Quantile)
