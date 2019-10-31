@@ -15,5 +15,5 @@ The code below demostrates the Mgma polette in the [viridis] (https://github.com
 ## Magma colors
 
 ```{r fig.cap="The Maunga Whau volcano, Auckland."}
-image(volcano,col=viridis(200,option = "A"))
+image(volcano,col=viridis(400,option = "C"))
 ```
