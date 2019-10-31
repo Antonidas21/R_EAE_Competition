@@ -7,4 +7,4 @@ Usando un ejemplo de la página dedicada a RMarkdown (https://beta.rstudioconnec
 
 ## RMarkdown
 
-En este documento damos uso a la paleta de colores de viridis para cambiar los colores de un gráfico dado.
+En este documento damos uso a la paleta de colores de viridis para cambiar los colores de un gráfico dado. Para ello hemos usado como ejemplo un RMarkdown que se encuentra dentro de la misma página del RMarkdown Studio (https://rmarkdown.rstudio.com/lesson-3.html). Con esto como base hemos ido modificando la paleta de colores que se aplica en la función "image".
