@@ -1,7 +1,10 @@
 ---
-title: "Magda Demo"
+title: "Viridis en el Maunga Volcan"
 author: "Jon Ramírez & Antonio Álvarez Bao"
-output: html_document
+output: 
+  prettydoc::html_pretty:
+    theme: hpstr
+    highlight: github
 ---
 
 ```{r include=FALSE}
@@ -11,28 +14,36 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r message=FALSE, warning=FALSE}
 library(viridis)
 ```
-Este codigo muestra la Magma en el paquete [viridis] (https://github.com/sjmgarnier/viridis). Muestra un mapa de contorno del volcán Maunga Whau en Auckland, Nueva Zelanda.
+Este código muestra la Magma del volcán Maunga Whau en Auckland, Nueva Zelanda empleando la paleta de colores "viridis" (https://github.com/sjmgarnier/viridis). En concreto muestra un mapa de contorno del volcán.
+
 ## Magma colors
 
 ```{r fig.cap="Volcan Maunga Whau, Auckland."}
 image(volcano,col=viridis(200,option = "A"))
 ```
-Adicionalmente vamos a explorar qué otras gamas de colores nos aporta Viridis
+
+--------------------------------------------------------------------------------------
+
+_Adicionalmente vamos a explorar qué otras gamas de colores nos aporta Viridis:_
+
 ## Inferno colors
 
 ```{r fig.cap="Volcan Maunga Whau, Auckland."}
 image(volcano,col=viridis(200,option = "B"))
 ```
+
 ## Plasma colors
 
 ```{r fig.cap="Volcan Maunga Whau, Auckland."}
 image(volcano,col=viridis(200,option = "C"))
 ```
+
 ## Viridis colors
 
 ```{r fig.cap="Volcan Maunga Whau, Auckland."}
 image(volcano,col=viridis(200,option = "D"))
 ```
+
 ## Cividis colors
 
 ```{r fig.cap="Volcan Maunga Whau, Auckland."}
