@@ -1,6 +1,6 @@
 ---
-title: "rbokeh iris dataset"
-author: "Ryan Hafen"
+title: "Gráficos Competición R."
+author: "Jon Ramírez & Antonio Álvarez"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
