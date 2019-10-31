@@ -11,6 +11,8 @@ output:
 ```{r setup, include=FALSE}
 library(rbokeh)
 library(flexdashboard)
+library(viridisLite)
+library(viridis)
 ```
 
 row
@@ -20,7 +22,10 @@ row
 
 ```{r}
 figure(width = NULL, height = NULL) %>%
-  ly_points(Sepal.Length, Sepal.Width, data = iris, color = Species)
+    ly_points(Sepal.Length, Sepal.Width, data = iris, color = Species, glyph = Species,
+    hover = list(Sepal.Length, Sepal.Width)) %>%
+    set_palette(discrete_color = pal_color(c("seagreen", "yellowgreen", "springgreen")))
+
 # figure() %>%
 #   ly_points(Sepal.Length, Sepal.Width, data = iris,
 #     color = Species, glyph = Species)
